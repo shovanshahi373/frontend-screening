@@ -1,0 +1,21 @@
+.list {
+    max-width: 1000px;
+    font-size: 1.4em;
+}
+
+.list > div {
+    padding: 10px 30px;
+    background-color: white;
+    color: blue;
+    font-weight: bolder;
+}
+
+.list > div:nth-child(odd) {
+    background-color: red;
+    color: white;
+}
+
+.list > div:nth-child(4n) {
+    background-color: green;
+    color: white;
+}

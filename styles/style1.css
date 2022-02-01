@@ -1,0 +1,53 @@
+.problem-1 {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.problem-1 .rect {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    margin: 50px 100px;
+}
+
+.problem-1 .rect .circle {
+    --size: 100px;
+    --sub-circle-size: calc((var(--size)) * .4);
+    --triangle-height: calc(calc(var(--size) - var(--sub-circle-size)) * .5);
+    background-color: red;
+    border-radius: 50%;
+    height: var(--size);
+    width: var(--size);
+    position: relative;
+}
+
+.problem-1 .rect .circle::before {
+    position: absolute;
+    content: "";
+    height:  var(--sub-circle-size);
+    width:  var(--sub-circle-size);
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.problem-1 .rect .circle::after {
+    position: absolute;
+    content: "";
+    border: var(--triangle-height) solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-left-width: calc(var(--triangle-height) * .75);
+    border-right-width: calc(var(--triangle-height) * .75);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+}

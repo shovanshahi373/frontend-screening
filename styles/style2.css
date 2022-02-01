@@ -1,0 +1,68 @@
+.problem-2 {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    --cell-width: 15vw;
+    --gap: 5px;
+    grid-template-columns: repeat(4,var(--cell-width));
+    grid-auto-rows: calc(var(--cell-width) * .75);
+    row-gap: var(--gap);
+    padding: var(--gap);
+    column-gap: calc(var(--gap) * 2);
+    margin: 10px 20px;
+    background-color: white;
+}
+
+.grid-container > div {
+    min-width: 100px;
+}
+
+.grid-container > div:nth-child(1) {
+    background-color: #f3a5a3;
+}
+
+.grid-container > div:nth-child(2) {
+    background-color: #89e0cd;
+}
+
+.grid-container > div:nth-child(3) {
+    background-color: #c057cb;
+}
+
+.grid-container > div:nth-child(4) {
+    background-color: #5844e3;
+}
+
+.grid-container > div:nth-child(5) {
+    background-color: #70356f;
+}
+
+.grid-container > div:nth-child(6) {
+    background-color: #632927;
+}
+
+.grid-container > div:nth-child(7) {
+    background-color: #262974;
+}
+
+.grid-container > div:nth-child(8) {
+    background-color: #141b48;
+}
+.grid-container > div:nth-child(9) {
+    background-color: #1a3313;
+}
+.grid-container > div:nth-child(10) {
+    background-color: #2c1e1d;
+}
+.grid-container > div:nth-child(11) {
+    background-color: #0b170b;
+}
+.grid-container > div:nth-child(12) {
+    background-color: #000000;
+}

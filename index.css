@@ -1,0 +1,20 @@
+@import "./styles/style1.css";
+@import "./styles/style2.css";
+@import "./styles/style3.css";
+@import "./styles/style4.css";
+
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.problem {
+    width: max-content;
+    margin: auto;
+    margin-bottom: 40px;
+}
